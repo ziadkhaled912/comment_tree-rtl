@@ -95,23 +95,24 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       Text(
                         'dangngocduc',
-                        style: Theme.of(context).textTheme.caption?.copyWith(
-                            fontWeight: FontWeight.w600, color: Colors.black),
+                        // style: Theme.of(context).textTheme.caption?.copyWith(
+                        //     fontWeight: FontWeight.w600, color: Colors.black),
                       ),
                       SizedBox(
                         height: 4,
                       ),
                       Text(
                         '${data.content}',
-                        style: Theme.of(context).textTheme.caption?.copyWith(
-                            fontWeight: FontWeight.w300, color: Colors.black),
+                        // style: Theme.of(context).textTheme.caption?.copyWith(
+                        //     fontWeight: FontWeight.w300, color: Colors.black),
                       ),
                     ],
                   ),
                 ),
                 DefaultTextStyle(
-                  style: Theme.of(context).textTheme.caption!.copyWith(
-                      color: Colors.grey[700], fontWeight: FontWeight.bold),
+                  // style: Theme.of(context).textTheme.caption!.copyWith(
+                  //     color: Colors.grey[700], fontWeight: FontWeight.bold),
+                  style: TextStyle(),
                   child: Padding(
                     padding: EdgeInsets.only(top: 4),
                     child: Row(
@@ -145,23 +146,23 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       Text(
                         'dangngocduc',
-                        style: Theme.of(context).textTheme.caption!.copyWith(
-                            fontWeight: FontWeight.w600, color: Colors.black),
+                        // style: Theme.of(context).textTheme.caption!.copyWith(
+                        //     fontWeight: FontWeight.w600, color: Colors.black),
                       ),
                       SizedBox(
                         height: 4,
                       ),
                       Text(
                         '${data.content}',
-                        style: Theme.of(context).textTheme.caption!.copyWith(
-                            fontWeight: FontWeight.w300, color: Colors.black),
+                        // style: Theme.of(context).textTheme.caption!.copyWith(
+                        //     fontWeight: FontWeight.w300, color: Colors.black),
                       ),
                     ],
                   ),
                 ),
                 DefaultTextStyle(
-                  style: Theme.of(context).textTheme.caption!.copyWith(
-                      color: Colors.grey[700], fontWeight: FontWeight.bold),
+                  // style: Theme.of(context).textTheme.caption!.copyWith(
+                  //     color: Colors.grey[700], fontWeight: FontWeight.bold),
                   child: Padding(
                     padding: EdgeInsets.only(top: 4),
                     child: Row(

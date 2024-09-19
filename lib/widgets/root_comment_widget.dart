@@ -5,13 +5,14 @@ import 'package:provider/provider.dart';
 class RootCommentWidget extends StatelessWidget {
   final PreferredSizeWidget avatar;
   final Widget content;
+  final bool hasReplies;
 
-  const RootCommentWidget(this.avatar, this.content);
+  const RootCommentWidget(this.avatar, this.content, this.hasReplies);
 
   @override
   Widget build(BuildContext context) {
     return CustomPaint(
-      painter: RootPainter(
+      painter: !hasReplies ? null : RootPainter(
         avatar.preferredSize,
         context.watch<TreeThemeData>().lineColor,
         context.watch<TreeThemeData>().lineWidth,
